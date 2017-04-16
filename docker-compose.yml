@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  scrapy:
+    build: .
+    image: xieyunzi/scrapy
+    working_dir: /feeds
+    volumes:
+      - ./feeds:/feeds
