@@ -12,3 +12,11 @@ class FeedsItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+
+
+class SiteItem(scrapy.Item):
+    _type = scrapy.Field()
+    _group = scrapy.Field()
+    rank = scrapy.Field()
+    domain = scrapy.Field()
+    description = scrapy.Field()
